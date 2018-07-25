@@ -1,0 +1,74 @@
+(base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva>virtualenv venv
+Using base prefix 'c:\\users\\santi\\anaconda3'
+New python executable in C:\Users\santi\DOCUME~1\Python\RESTAP~1\section6\nueva\venv\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+
+(base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva\venv\Scripts>dir
+ Volume in drive C is OS
+ Volume Serial Number is FE1F-1567
+
+ Directory of C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva\venv\Scripts
+
+07/20/2018  06:05 AM    <DIR>          .
+07/20/2018  06:05 AM    <DIR>          ..
+07/20/2018  06:05 AM             2,253 activate
+07/20/2018  06:05 AM               795 activate.bat
+07/20/2018  06:05 AM             8,325 activate.ps1
+07/20/2018  06:05 AM             1,137 activate_this.py
+07/20/2018  06:05 AM               508 deactivate.bat
+07/20/2018  06:04 AM           102,817 easy_install-3.6.exe
+07/20/2018  06:04 AM           102,817 easy_install.exe
+07/20/2018  06:05 AM           102,799 pip.exe
+07/20/2018  06:05 AM           102,799 pip3.6.exe
+07/20/2018  06:05 AM           102,799 pip3.exe
+07/20/2018  06:04 AM            93,696 python.exe
+07/20/2018  06:04 AM            51,200 python3.dll
+07/20/2018  06:04 AM         3,603,456 python36.dll
+07/20/2018  06:04 AM            92,160 pythonw.exe
+07/20/2018  06:05 AM           102,796 wheel.exe
+              15 File(s)      4,470,357 bytes
+               2 Dir(s)  1,207,728,640,000 bytes free
+
+(base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva\venv\Scripts>activate.bat
+(venv) (base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva\venv\Scripts>pip install Flask
+(venv) (base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva\venv\Scripts>pip install Flask-JWT
+(venv) (base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva\venv\Scripts>pip install Flask-Restful
+(venv) (base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva\venv\Scripts>pip install Flask-SQLAlchemy
+
+[aca modifique el codigo]
+
+(venv) (base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva>python create_tables.py
+(venv) (base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva>dir
+ Volume in drive C is OS
+ Volume Serial Number is FE1F-1567
+ Directory of C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva
+
+07/20/2018  10:43 AM    <DIR>          .
+07/20/2018  10:43 AM    <DIR>          ..
+07/20/2018  06:26 AM             2,235 app2.py
+07/12/2018  02:53 PM               552 create_tables.py
+07/20/2018  10:43 AM            12,288 data.db
+07/20/2018  07:08 AM    <DIR>          models
+07/20/2018  06:16 AM             2,197 notas.txt
+07/20/2018  06:21 AM    <DIR>          resources
+07/20/2018  07:08 AM               521 security.py
+07/20/2018  06:05 AM    <DIR>          venv
+               5 File(s)         17,793 bytes
+               5 Dir(s)  1,207,233,560,576 bytes free
+
+(venv) (base) C:\Users\santi\Documents\Python\Rest APIs with Flask and Python\section6\nueva>python app2.py
+ * Serving Flask app "app2" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 222-885-830
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+
+
+------------------------------------------------------
+
+

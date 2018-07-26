@@ -15,10 +15,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False   # don't turn off the flas
 app.secret_key = 'jose'
 api = Api(app)   # api will allow us to very easily add these Resources (get, post, etc) to it
 
-@app.before_first_request
-def create_tables():
-    db.create_all()        # SQLAlchemy creates the tables for you. It only creates the tables that it sees --> we need to 'import'
-
 jwt = JWT(app, authenticate, identity) # when we initialize the JWT object, our app will use the authenticate and identity to allow for authentication of users.
 # JWT create a new endpoint /auth. When we call /auth, we send it a username and password. And the JWT extension gets that username and password and
 # sends it over to the authenticate function that takes in a username and password and compares the passwords, and returns a User object

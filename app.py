@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
@@ -10,7 +12,7 @@ from resources.store import Store, StoreList
 # Flask is gona be our app, and our app is gonna have all these routes, and then
 # we can create new routes and assign methods to them.
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'  # if you used oracle, Postgres or mysql, you need to change 'sqllite'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///data.db')  # get the environmrnt variable, otherwise sql lite
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False   # don't turn off the flask SQLAlchemy modification tracker
 app.secret_key = 'jose'
 api = Api(app)   # api will allow us to very easily add these Resources (get, post, etc) to it
